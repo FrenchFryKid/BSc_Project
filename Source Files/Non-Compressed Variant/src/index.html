@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Non-Compressed</title>
+  <meta charset="UTF-8" />
+  <!-- <script src="index.js"></script>
+  <script src="https://cdnjs.deepai.org/deepai.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-node@4.11.0/dist/index.min.js"></script>
+  <script async src="https://docs.opencv.org/master/opencv.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+  <h1>Model Settings</h1>
+  <div class="dropdown">
+    <select id="select1" style = "width: 50%">
+      <option value="sequential">Sequential</option>
+      <option value="functional">Functional</option>
+      <option value="cnn">CNN</option>
+  </select>
+  <br>
+  <br>
+  <button id = "reload">Reload Model</button>
+  <br>
+  <button id = "train">Train Model</button>
+  </div>
+
+  <!-- <img src="./images/testimage.jpg" id="image"> -->
+  <!-- <button id = "predictButton">Predict</button> -->
+  <p id="predictionResult"></p>
+  <!-- <button id="sequential">Sequential Reload</button>
+  <br>
+  <button id="sequentialTrain">Sequential Train</button>
+  <br>
+  <button id="functional">Functional Reload</button>
+  <br>
+  <button id="functionalTrain">Functional Train</button> -->
+  <p id="status"></p>
+  <p id="lossOutput"></p>
+  <p>Width: </p><input id="width">
+  <p>Height: </p><input id="height">
+  <br>
+  <br>
+  <button style="width:170px; height:20px;" id="predict">Predict</button>
+  <h1>Original Images</p>
+    <img src="https://i.imgur.com/cRJaNUg.jpg" id="test" crossorigin="anonymous" style = "display:none">
+    <img src="https://i.imgur.com/oFv8EM0.jpg" id="testimage" crossorigin="anonymous"  style = "display:none">
+    <img src="https://i.imgur.com/moiLga4.jpg?1" id="blue" crossorigin="anonymous" style = "display:none">
+    <img src="https://i.imgur.com/PfLsiBN.jpg" id="car" crossorigin="anonymous" style = "display:none">
+    <img src="https://i.imgur.com/R7wpmtD.jpg" id="panda" crossorigin="anonymous" style = "display:none" > 
+    <img src="https://i.imgur.com/mQWXSte.jpg" id="correct" crossorigin="anonymous" style = "display:none">
+    <img id = "testing">
+<!-- 
+  <img src = "./images/test.jpg" id="test" style = "display:none" >
+  <img src = "./images/testimage.jpg" id="testimage" style = "display:none" >
+  <img src = "./images/blue.jpg" id="blue" style = "display:none">
+  <img src = "./images/car.jpg" id="car" style = "display:none">
+  <img src = "./images/panda.jpg" id="panda" style = "display:none">
+  <img src = "./images/correct.png" id="correct" style = "display:none" > -->
+  
+
+
+
+
+
+    <h1>Modified</h1>
+    <div id="insertion"></div>
+
+
+</body>
+
+
+</html>
